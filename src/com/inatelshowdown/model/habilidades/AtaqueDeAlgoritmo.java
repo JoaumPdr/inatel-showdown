@@ -1,4 +1,4 @@
-package com.inatelshowdown.model.habilidade;
+package com.inatelshowdown.model.habilidades;
 import com.inatelshowdown.model.Habilidade;
 import com.inatelshowdown.model.Professor;
 
@@ -16,6 +16,7 @@ public class AtaqueDeAlgoritmo extends Habilidade {
         decrementarPp();
         System.out.println(usuario.getNome() + " usou " + getNome() + "!");
 
+        // Este ataque sempre acerta (Acerto = 1.0), então não precisa de verificação
         int danoReal = (int) (getDano() * usuario.getModificadorAtaque());
         alvo.receberDano(danoReal);
 

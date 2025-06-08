@@ -1,4 +1,4 @@
-package com.inatelshowdown.model.habilidade;
+package com.inatelshowdown.model.habilidades;
 import com.inatelshowdown.model.Habilidade;
 import com.inatelshowdown.model.Professor;
 
@@ -16,8 +16,8 @@ public class Distracao extends Habilidade {
         decrementarPp();
         System.out.println(usuario.getNome() + " usou " + getNome() + "!");
 
-        double novoAcerto = alvo.getAcertoBase() - 0.10;
-        alvo.setAcertoBase(Math.max(novoAcerto, 0.50)); // Limite mínimo
+        double novoAcerto = alvo.getAcerto() - 0.10;
+        alvo.setAcerto(Math.max(novoAcerto, 0.50)); // Limite mínimo
         System.out.println("O acerto de " + alvo.getNome() + " diminuiu!");
     }
 }

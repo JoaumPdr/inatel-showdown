@@ -1,4 +1,4 @@
-package com.inatelshowdown.model.habilidade;
+package com.inatelshowdown.model.habilidades;
 import com.inatelshowdown.model.Habilidade;
 import com.inatelshowdown.model.Professor;
 
@@ -15,9 +15,8 @@ public class ArremessoDeCafe extends Habilidade {
         }
         decrementarPp();
         System.out.println(usuario.getNome() + " usou " + getNome() + "!");
-        System.out.println("Ai, ardeu!");
 
-        double chanceAcerto = getAcerto() * usuario.getAcertoBase() * (1 - alvo.getEvasao());
+        double chanceAcerto = getAcerto() * usuario.getAcerto() * (1 - alvo.getEvasao());
         if (Math.random() <= chanceAcerto) {
             int danoReal = (int) (getDano() * usuario.getModificadorAtaque());
             alvo.receberDano(danoReal);

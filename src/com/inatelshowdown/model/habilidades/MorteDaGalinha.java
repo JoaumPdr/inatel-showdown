@@ -1,4 +1,4 @@
-package com.inatelshowdown.model.habilidade;
+package com.inatelshowdown.model.habilidades;
 import com.inatelshowdown.model.Habilidade;
 import com.inatelshowdown.model.Professor;
 
@@ -15,7 +15,7 @@ public class MorteDaGalinha extends Habilidade {
         decrementarPp();
         System.out.println(usuario.getNome() + " usou o temível ataque: " + getNome() + "!");
 
-        double chanceAcerto = getAcerto() * usuario.getAcertoBase() * (1 - alvo.getEvasao());
+        double chanceAcerto = getAcerto() * usuario.getAcerto() * (1 - alvo.getEvasao());
         if (Math.random() <= chanceAcerto) {
             int danoReal = (int) (getDano() * usuario.getModificadorAtaque());
             alvo.receberDano(danoReal);

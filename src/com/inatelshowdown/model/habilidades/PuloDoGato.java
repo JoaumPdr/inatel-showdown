@@ -1,4 +1,4 @@
-package com.inatelshowdown.model.habilidade;
+package com.inatelshowdown.model.habilidades;
 import com.inatelshowdown.model.Habilidade;
 import com.inatelshowdown.model.Professor;
 

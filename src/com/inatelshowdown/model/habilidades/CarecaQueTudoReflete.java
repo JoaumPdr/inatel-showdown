@@ -1,4 +1,4 @@
-package com.inatelshowdown.model.habilidade;
+package com.inatelshowdown.model.habilidades;
 import com.inatelshowdown.model.Habilidade;
 import com.inatelshowdown.model.Professor;
 
@@ -20,8 +20,8 @@ public class CarecaQueTudoReflete extends Habilidade {
         usuario.setEvasao(Math.min(novaEvasao, 0.75)); // Limite de 75%
         System.out.println("O reflexo aumentou a evasão de " + usuario.getNome() + "!");
 
-        double novoAcerto = alvo.getAcertoBase() - 0.15;
-        alvo.setAcertoBase(Math.max(novoAcerto, 0.50)); // Limite mínimo de 50%
+        double novoAcertoAlvo = alvo.getAcerto() - 0.15;
+        alvo.setAcerto(Math.max(novoAcertoAlvo, 0.50)); // Limite mínimo de 50%
         System.out.println("O brilho diminuiu o acerto de " + alvo.getNome() + "!");
     }
 }

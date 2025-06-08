@@ -40,6 +40,9 @@ public class Batalha {
     }
 
     private void executarTurno(Professor atacante, Professor defensor) {
+        // Atualiza os efeitos de status do atacante no início do turno
+        atacante.atualizarEfeitos();
+
         // Verifica status de atordoado no início do turno
         if (atacante.isAtordoado()) {
             System.out.println(atacante.getNome() + " está atordoado e não pode se mover!");

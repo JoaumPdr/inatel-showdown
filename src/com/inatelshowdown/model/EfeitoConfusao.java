@@ -1,27 +1,29 @@
 package com.inatelshowdown.model;
-import com.inatelshowdown.model.Professor;
 
 public class EfeitoConfusao extends EfeitoStatus {
 
     public EfeitoConfusao(int duracao) {
-        super.setDuracao(duracao);  // Acessa duracao via método protegido
+        super.setDuracao(duracao);
     }
 
     @Override
     public void aplicar(Professor alvo) {
-        // Adiciona métodos necessários na classe Professor
+        // Acessa o acerto através dos getters e setters
         alvo.setAcerto(alvo.getAcerto() * 0.7); // Reduz 30%
-        System.out.println(alvo.getNome() + " está confuso e erra mais!");
+        System.out.println(alvo.getNome() + " está confuso e seu acerto diminuiu!");
     }
 
     @Override
     public void remover(Professor alvo) {
-        alvo.setAcerto(alvo.getAcerto() / 0.7);
-        System.out.println(alvo.getNome() + " voltou ao normal!");
+        alvo.setAcerto(alvo.getAcerto() / 0.7); // Restaura o acerto
+        System.out.println(alvo.getNome() + " não está mais confuso!");
     }
 
     @Override
     public void atualizar(Professor alvo) {
-        super.setDuracao(super.getDuracao() - 1); // Atualiza duração
+        super.setDuracao(super.getDuracao() - 1); // Reduz a duração
+        if (!terminou()) {
+            System.out.println(alvo.getNome() + " continua confuso...");
+        }
     }
 }
