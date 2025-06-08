@@ -2,10 +2,10 @@ package com.inatelshowdown.model;
 
 public abstract class Habilidade {
     private String nome;
-    private int ppMax;
-    private int ppAtual;
-    private int dano;       // Novo atributo
-    private double acerto;  // Novo atributo (0.0 a 1.0)
+    private int ppMax; // quantidade de vezes que uma habilidade pode ser usada
+    private int ppAtual; // quantidade de vezes restantes que uma habilidade pode ser usada
+    private int dano;
+    private double acerto; // Acerto base da habilidade (0.0 a 1.0)
 
     public Habilidade(String nome, int ppMax, int dano, double acerto) {
         this.nome = nome;
@@ -15,7 +15,7 @@ public abstract class Habilidade {
         this.acerto = acerto;
     }
 
-    // Método abstrato (todas as habilidades devem implementar)
+    //Metodo abstrato que será implementado por cada habilidade específica
     public abstract void usar(Professor usuario, Professor alvo);
 
     // Métodos comuns
