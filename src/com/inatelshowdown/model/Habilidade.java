@@ -2,13 +2,15 @@ package com.inatelshowdown.model;
 
 public abstract class Habilidade {
     private String nome;
+    private String descricao; // descrição da habilidade
     private int ppMax; // quantidade de vezes que uma habilidade pode ser usada
     private int ppAtual; // quantidade de vezes restantes que uma habilidade pode ser usada
     private int dano;
     private double acerto; // Acerto base da habilidade (0.0 a 1.0)
 
-    public Habilidade(String nome, int ppMax, int dano, double acerto) {
+    public Habilidade(String nome, String descricao, int ppMax, int dano, double acerto) {
         this.nome = nome;
+        this.descricao = descricao;
         this.ppMax = ppMax;
         this.ppAtual = ppMax;
         this.dano = dano;
@@ -29,6 +31,7 @@ public abstract class Habilidade {
 
     // Getters
     public String getNome() { return nome; }
+    public String getDescricao() { return descricao; }
     public int getPpAtual() { return ppAtual; }
     public int getPpMax() { return ppMax; }
     public int getDano() { return dano; }

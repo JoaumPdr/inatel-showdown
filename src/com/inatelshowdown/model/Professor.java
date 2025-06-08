@@ -68,6 +68,20 @@ public class Professor {
         }
     }
 
+    public void exibirStats() {
+        System.out.println("\n--------------------------");
+        System.out.println("Stats de " + this.nome);
+        System.out.println("HP: " + this.hp + "/" + this.hpMax);
+        System.out.printf("Evasão: %.0f%%\n", this.evasao * 100);
+        System.out.printf("Modificador de Ataque: %.2fx\n", this.modificadorAtaque);
+        System.out.println("Habilidades:");
+        for (Habilidade hab : this.habilidades) {
+            System.out.printf("  - %s (Dano: %d, PP: %d/%d, Acerto: %.0f%%): %s\n",
+                    hab.getNome(), hab.getDano(), hab.getPpAtual(), hab.getPpMax(), hab.getAcerto() * 100, hab.getDescricao());
+        }
+        System.out.println("--------------------------");
+    }
+
     public boolean estaVivo() {
         return this.hp > 0;
     }

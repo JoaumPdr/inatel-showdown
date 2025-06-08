@@ -4,7 +4,7 @@ import com.inatelshowdown.model.Professor;
 
 public class Distracao extends Habilidade {
     public Distracao() {
-        super("Distração", 20, 0, 1.0);
+        super("Distração", "Distrai o oponente, diminuindo seu acerto. Acerto do Alvo: -10%", 20, 0, 1.0);
     }
 
     @Override
@@ -17,7 +17,7 @@ public class Distracao extends Habilidade {
         System.out.println(usuario.getNome() + " usou " + getNome() + "!");
 
         double novoAcerto = alvo.getAcerto() - 0.10;
-        alvo.setAcerto(Math.max(novoAcerto, 0.50)); // Limite mínimo
+        alvo.setAcerto(Math.max(novoAcerto, 0.50));
         System.out.println("O acerto de " + alvo.getNome() + " diminuiu!");
     }
 }

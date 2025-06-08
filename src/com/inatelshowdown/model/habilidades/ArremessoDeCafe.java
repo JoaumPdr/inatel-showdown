@@ -4,7 +4,7 @@ import com.inatelshowdown.model.Professor;
 
 public class ArremessoDeCafe extends Habilidade {
     public ArremessoDeCafe() {
-        super("Arremesso de Café", 15, 40, 0.90);
+        super("Arremesso de Café", "Joga café quente no oponente. Dano: 40, Acerto: 90%", 15, 40, 0.90);
     }
 
     @Override

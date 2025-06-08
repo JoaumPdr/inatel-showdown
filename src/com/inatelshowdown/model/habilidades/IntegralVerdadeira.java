@@ -4,7 +4,7 @@ import com.inatelshowdown.model.Professor;
 
 public class IntegralVerdadeira extends Habilidade {
     public IntegralVerdadeira() {
-        super("Integral Verdadeira", 5, 80, 0.95);
+        super("Integral Verdadeira", "Um ataque poderoso com 50% de chance de atordoar o oponente. Dano: 80, Acerto: 95%", 5, 80, 0.95);
     }
 
     @Override
@@ -20,7 +20,7 @@ public class IntegralVerdadeira extends Habilidade {
         if (Math.random() <= chanceAcerto) {
             int danoReal = (int) (getDano() * usuario.getModificadorAtaque());
             alvo.receberDano(danoReal);
-            if (Math.random() < 0.5) { // 50% de chance de atordoar
+            if (Math.random() < 0.5) {
                 System.out.println(alvo.getNome() + " ficou atordoado com a complexidade!");
                 alvo.setAtordoado(true);
             }

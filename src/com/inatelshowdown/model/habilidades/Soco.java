@@ -4,7 +4,7 @@ import com.inatelshowdown.model.Professor;
 
 public class Soco extends Habilidade {
     public Soco() {
-        super("Soco", 30, 35, 1.0);
+        super("Soco", "Um soco básico, mas confiável. Dano: 35, Acerto: 100%", 30, 35, 1.0);
     }
 
     @Override

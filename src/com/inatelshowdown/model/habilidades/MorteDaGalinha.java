@@ -4,7 +4,7 @@ import com.inatelshowdown.model.Professor;
 
 public class MorteDaGalinha extends Habilidade {
     public MorteDaGalinha() {
-        super("A Morte da Galinha", 5, 160, 0.40);
+        super("A Morte da Galinha", "Um ataque devastador, mas com uma precisão muito baixa. Dano: 160, Acerto: 40%", 5, 160, 0.40);
     }
     @Override
     public void usar(Professor usuario, Professor alvo) {

@@ -4,7 +4,7 @@ import com.inatelshowdown.model.Professor;
 
 public class Rasteira extends Habilidade {
     public Rasteira() {
-        super("Rasteira", 20, 60, 0.70);
+        super("Rasteira", "Um ataque de dano moderado com precisão razoável. Dano: 60, Acerto: 70%", 20, 60, 0.70);
     }
 
     @Override
