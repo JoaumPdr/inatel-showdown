@@ -1,77 +1,100 @@
-Inatel Showdown
-Descrição
-Inatel Showdown é um jogo de batalha por turnos, no estilo RPG, onde professores do Inatel se enfrentam em um combate épico. Cada professor possui habilidades únicas, com diferentes tipos de dano, efeitos e custos. Escolha seu professor favorito e desafie seus colegas para ver quem é o mais forte!
+<div align="center">
 
-Como Jogar
-Escolha seu Lutador:
+# ✨ Inatel Showdown (v1.0) ✨
 
-Ao iniciar o jogo, uma lista de professores disponíveis será exibida.
+</div>
 
-Digite o número correspondente ao professor para ver seus status detalhados (HP, Habilidades, etc.).
+<div align="center">
 
-Confirme sua escolha para selecioná-lo como seu lutador.
+Um jogo de batalha épico em turnos com os seus professores favoritos do Inatel!
 
-Escolha seu Oponente:
+</div>
 
-Após escolher seu lutador, uma lista de oponentes será mostrada.
+---
 
-Assim como na sua escolha, você pode ver os status do oponente antes de confirmar a batalha.
+## 🎮 Como Jogar
 
-A Batalha:
+O jogo é simples e direto. Siga os passos abaixo para começar a sua jornada:
 
-A batalha acontece em turnos.
+1.  **Selecione seu Professor:**
+    * Escolha um professor da lista para ser o seu campeão.
+    * Analise os status e as habilidades de cada um para montar a sua estratégia.
 
-No seu turno, uma lista de suas habilidades disponíveis será exibida, incluindo o PP (Pontos de Poder) restante de cada uma.
+2.  **Desafie um Oponente:**
+    * Escolha um oponente da lista para a batalha.
+    * Você pode ver os status do seu adversário antes de confirmar o combate.
 
-Escolha a habilidade que deseja usar digitando o número correspondente.
+3.  **Que comece a Batalha!**
+    * A batalha é por turnos. No seu turno, escolha uma das suas habilidades para atacar ou aplicar efeitos no oponente.
+    * Fique de olho no seu **HP** e nos **PPs** (Pontos de Poder) das suas habilidades.
+    * Vença a batalha zerando o HP do seu oponente!
 
-O oponente (controlado pelo computador) escolherá uma de suas habilidades aleatoriamente.
+---
 
-A batalha continua até que o HP de um dos professores chegue a zero.
+## 👨‍🏫 Os Professores 👨‍🏫
 
-Professores e Habilidades
-O jogo conta com 4 professores selecionáveis, cada um com um conjunto de habilidades comuns e uma ou mais habilidades especiais.
+Conheça os mestres do Inatel que estão prontos para o combate!
 
-Chris
-HP: 120
+| Professor | HP | Habilidades Especiais |
+| :--- | :-: | :--- |
+| **Chris** | 120 | `Careca que Tudo Reflete` |
+| **Renan** | 95 | `Integral Verdadeira` |
+| **Luis Felipe** | 90 | `A Morte da Galinha` |
+| **Renzo** | 100 | `O Pulo do Gato` e `Ataque Discreto` |
 
-Habilidades:
+---
 
-Careca que Tudo Reflete (Especial): Aumenta a evasão do usuário em 20% e diminui o acerto do oponente em 15%.
+## 💥 Habilidades 💥
 
-Soco: Um ataque básico com 35 de dano e 100% de precisão.
+Cada professor possui um arsenal de habilidades únicas. Conheça todas elas:
 
-Distração: Diminui o acerto do oponente em 10%.
+### Habilidades de Ataque
 
-Renan
-HP: 95
+| Habilidade | Dano | Precisão | PP | Descrição |
+| :--- | :-: | :---: | :-: | :--- |
+| **Soco** | 35 | 100% | 30 | Um soco básico, mas confiável. |
+| **Rasteira** | 60 | 70% | 20 | Um ataque de dano moderado com precisão razoável. |
+| **Arremesso de Café** | 40 | 90% | 15 | Joga café quente no oponente. |
+| **Ataque de Algoritmo** | 20 | 100% | 15 | Causa dano e diminui a evasão do oponente. |
+| **Ataque Discreto** | 110 | 70% | 15 | Um ataque poderoso, porém com baixa precisão. |
+| **A Morte da Galinha**| 160 | 40% | 5 | Um ataque devastador, mas com uma precisão muito baixa. |
+| **Integral Verdadeira**| 80 | 95% | 5 | Um ataque poderoso com 50% de chance de atordoar. |
 
-Habilidades:
+### Habilidades de Efeito
 
-Integral Verdadeira (Especial): Um ataque poderoso com 80 de dano, 95% de precisão e 50% de chance de atordoar o oponente.
+| Habilidade | Efeito | PP | Descrição |
+| :--- | :---: | :-: | :--- |
+| **Distração** | -10% Acerto (Alvo) | 20 | Distrai o oponente, diminuindo seu acerto. |
+| **Intensivão** | +25% Ataque (Usuário) | 10 | Aumenta o dano dos ataques do usuário em 25%. |
+| **O Pulo do Gato** | +50% Ataque (Usuário) | 10 | Aumenta o dano dos ataques do usuário em 50%. |
+| **Careca que Tudo Reflete** | +20% Evasão (Usuário) <br> -15% Acerto (Alvo) | 10 | Aumenta a evasão e diminui o acerto do alvo. |
 
-Ataque de Algoritmo: Causa 20 de dano e diminui a evasão do oponente em 20%.
+---
 
-Soco: Um ataque básico com 35 de dano e 100% de precisão.
+## 🚀 Como Executar o Projeto
 
-Luis Felipe
-HP: 90
+Para compilar e executar o projeto, você precisa ter o **Java JDK** instalado. Siga os passos abaixo no seu terminal:
 
-Habilidades:
+1.  **Clone o repositório:**
+    ```bash
+    git clone [https://github.com/joaumpdr/inatel-showdown.git](https://github.com/joaumpdr/inatel-showdown.git)
+    ```
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd inatel-showdown
+    ```
+3.  **Compile os arquivos Java:**
+    ```bash
+    javac -d out src/com/inatelshowdown/model/*/*.java src/com/inatelshowdown/model/*.java src/com/inatelshowdown/battle/*.java src/*.java
+    ```
+4.  **Execute o jogo:**
+    ```bash
+    java -cp out Main
+    ```
 
-A Morte da Galinha (Especial): Um ataque devastador com 160 de dano, mas com apenas 40% de precisão.
+---
+<div align="center">
 
-Rasteira: Um ataque com 60 de dano e 70% de precisão.
+Feito por **joaumpdr**
 
-Arremesso de Café: Causa 40 de dano com 90% de precisão.
-
-Renzo
-HP: 100
-
-Habilidades:
-
-O Pulo do Gato (Especial): Aumenta o dano dos ataques do usuário em 50%.
-
-Ataque Discreto (Especial): Um ataque poderoso com 110 de dano e 70% de precisão.
-
-Intensivão: Aumenta o dano dos ataques do usuário em 25%.
+</div>
